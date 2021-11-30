@@ -4,7 +4,7 @@ import jwt from "jsonwebtoken"
 
 
 function generarToken(usuarioLogeando){
-    const token=jwt.sign({usuarioLogeando}, 'secretkey', {expiresIn: '3s'});
+    const token=jwt.sign({usuarioLogeando}, 'secretkey', {expiresIn: '100s'});
     return token
     
 }
